@@ -19,6 +19,12 @@
 		115554A616E8D2A800199BC4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115554A416E8D2A800199BC4 /* MainStoryboard_iPhone.storyboard */; };
 		115554A916E8D2A800199BC4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115554A716E8D2A800199BC4 /* MainStoryboard_iPad.storyboard */; };
 		115554AC16E8D2A800199BC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115554AB16E8D2A800199BC4 /* ViewController.m */; };
+		115554B716E8DB6D00199BC4 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115554B616E8DB6D00199BC4 /* ListViewController.m */; };
+		115554BB16E8DF1F00199BC4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 115554B816E8DF1F00199BC4 /* facebook.png */; };
+		115554BC16E8DF1F00199BC4 /* sinaweibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 115554B916E8DF1F00199BC4 /* sinaweibo.png */; };
+		115554BD16E8DF1F00199BC4 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 115554BA16E8DF1F00199BC4 /* twitter.png */; };
+		115554BF16E8E17E00199BC4 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 115554BE16E8E17E00199BC4 /* Social.framework */; };
+		115554C116E8E32500199BC4 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115554C016E8E32500199BC4 /* test.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,13 @@
 		115554A816E8D2A800199BC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		115554AA16E8D2A800199BC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		115554AB16E8D2A800199BC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		115554B516E8DB6D00199BC4 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		115554B616E8DB6D00199BC4 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		115554B816E8DF1F00199BC4 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		115554B916E8DF1F00199BC4 /* sinaweibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinaweibo.png; sourceTree = "<group>"; };
+		115554BA16E8DF1F00199BC4 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		115554BE16E8E17E00199BC4 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		115554C016E8E32500199BC4 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115554BF16E8E17E00199BC4 /* Social.framework in Frameworks */,
 				1155548D16E8D2A700199BC4 /* UIKit.framework in Frameworks */,
 				1155548F16E8D2A700199BC4 /* Foundation.framework in Frameworks */,
 				1155549116E8D2A700199BC4 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +89,7 @@
 		1155548B16E8D2A700199BC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				115554BE16E8E17E00199BC4 /* Social.framework */,
 				1155548C16E8D2A700199BC4 /* UIKit.framework */,
 				1155548E16E8D2A700199BC4 /* Foundation.framework */,
 				1155549016E8D2A700199BC4 /* CoreGraphics.framework */,
@@ -85,6 +100,7 @@
 		1155549216E8D2A700199BC4 /* testSocialFramework */ = {
 			isa = PBXGroup;
 			children = (
+				115554B216E8D5D500199BC4 /* Resource */,
 				1155549B16E8D2A700199BC4 /* AppDelegate.h */,
 				1155549C16E8D2A700199BC4 /* AppDelegate.m */,
 				115554A416E8D2A800199BC4 /* MainStoryboard_iPhone.storyboard */,
@@ -92,6 +108,8 @@
 				115554AA16E8D2A800199BC4 /* ViewController.h */,
 				115554AB16E8D2A800199BC4 /* ViewController.m */,
 				1155549316E8D2A700199BC4 /* Supporting Files */,
+				115554B516E8DB6D00199BC4 /* ListViewController.h */,
+				115554B616E8DB6D00199BC4 /* ListViewController.m */,
 			);
 			path = testSocialFramework;
 			sourceTree = "<group>";
@@ -109,6 +127,17 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		115554B216E8D5D500199BC4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				115554C016E8E32500199BC4 /* test.jpg */,
+				115554B816E8DF1F00199BC4 /* facebook.png */,
+				115554B916E8DF1F00199BC4 /* sinaweibo.png */,
+				115554BA16E8DF1F00199BC4 /* twitter.png */,
+			);
+			path = Resource;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -167,6 +196,10 @@
 				115554A316E8D2A800199BC4 /* Default-568h@2x.png in Resources */,
 				115554A616E8D2A800199BC4 /* MainStoryboard_iPhone.storyboard in Resources */,
 				115554A916E8D2A800199BC4 /* MainStoryboard_iPad.storyboard in Resources */,
+				115554BB16E8DF1F00199BC4 /* facebook.png in Resources */,
+				115554BC16E8DF1F00199BC4 /* sinaweibo.png in Resources */,
+				115554BD16E8DF1F00199BC4 /* twitter.png in Resources */,
+				115554C116E8E32500199BC4 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +213,7 @@
 				1155549916E8D2A700199BC4 /* main.m in Sources */,
 				1155549D16E8D2A700199BC4 /* AppDelegate.m in Sources */,
 				115554AC16E8D2A800199BC4 /* ViewController.m in Sources */,
+				115554B716E8DB6D00199BC4 /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
